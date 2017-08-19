@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_popup_window"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="6dp"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp"
+              android:paddingTop="6dp">
+
+    <TextView
+        android:id="@+id/tv_popup_windwo_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:00"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_popup_windwo_kwh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="电量：6.19"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"/>
+
+</LinearLayout>

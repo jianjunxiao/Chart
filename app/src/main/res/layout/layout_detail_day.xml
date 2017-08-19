@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_popup_window"
+              android:orientation="vertical"
+              android:padding="6dp">
+
+    <TextView
+        android:id="@+id/tv_popup_windwo_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-08-04"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/circle_0xff74b5fd"/>
+
+        <TextView
+            android:id="@+id/tv_popup_windwo_kwh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="电量：25.14KW·H"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>
