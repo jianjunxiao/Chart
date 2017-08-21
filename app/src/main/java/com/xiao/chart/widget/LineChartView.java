@@ -226,7 +226,7 @@ public class LineChartView extends View {
             canvas.drawLine(pointFs[i].x, pointFs[i].y, pointFs[i + 1].x, pointFs[i + 1].y, linePaint);
         }
 
-        // 画圆圈
+        // 画圆圈和竖直线
         for (int i = 0; i < pointFs.length; i++) {
             if ((i + 1) % 4 == 0 && i != touchedIndex) {
                 // 绘制小圆圈
@@ -235,7 +235,7 @@ public class LineChartView extends View {
                 canvas.drawCircle(pointFs[i].x, pointFs[i].y, circleRadius / 2f, linePaint);
                 linePaint.setColor(0xFF74B5FD);
             } else if (i == touchedIndex) {
-                // 绘制竖直线条
+                // 绘制点击后的竖直线条
                 linePaint.setColor(0xFFE48944);
                 canvas.drawLine(pointFs[i].x, originY, pointFs[i].x, originY - yAxisLength, linePaint);
                 // 绘制点击后的大圆圈

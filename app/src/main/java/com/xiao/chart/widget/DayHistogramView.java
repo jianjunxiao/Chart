@@ -335,8 +335,8 @@ public class DayHistogramView extends View {
     public boolean onTouchEvent(MotionEvent event) {
         int touchIndex = -1;
         for (int i = 0; i < histograms.length; i++) {
-            if (event.getX() >= histograms[i][1].left
-                    && event.getX() <= histograms[i][1].right
+            if (event.getX() >= histograms[i][1].left - space / 2f
+                    && event.getX() <= histograms[i][1].right + space / 2f
                     && event.getY() >= histograms[i][1].top
                     && event.getY() <= histograms[i][1].bottom) {
                 histograms[i][1].color = 0x96B3B3B3;

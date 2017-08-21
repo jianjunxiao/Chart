@@ -263,6 +263,7 @@ public class YearHistogramView extends View {
             float top5 = originY - ymys.get(i).sell * yScaleDiff / calculateScaleDiff(ymys);
 
             float bottom = originY;
+
             Histogram h = new Histogram(left, top0, right, bottom, 0x00000000);
             // 颜色可修改
             ArrayList<Histogram> arrayList = new ArrayList<>();
@@ -349,8 +350,8 @@ public class YearHistogramView extends View {
     public boolean onTouchEvent(MotionEvent event) {
         int touchIndex = -1;
         for (int i = 0; i < histograms.length; i++) {
-            if (event.getX() >= histograms[i][5].left
-                    && event.getX() <= histograms[i][5].right
+            if (event.getX() >= histograms[i][5].left - space / 2f
+                    && event.getX() <= histograms[i][5].right + space / 2f
                     && event.getY() >= histograms[i][5].top
                     && event.getY() <= histograms[i][5].bottom) {
                 histograms[i][5].color = 0x96B3B3B3;
